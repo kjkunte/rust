@@ -1,4 +1,5 @@
 fn main(){
-    let v = 1_1024 + 0xff + 1_077 + 0b1111_1111; //(summation of decimal, hexadecimal and binary)
+    let v = 1_024 + 0xff + 0o77 + 0b1111_1111; //(summation of decimal, hexadecimal, octal and binary)
     println!("{}", v);
+    assert!(v==1597);
 }

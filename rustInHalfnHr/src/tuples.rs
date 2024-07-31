@@ -4,7 +4,7 @@ fn main(){
     // let pair: (char, i32) = ('a', 17); // anotate
 
     println!("{}", type_of(&pair));
-    fn type_of<T>(_ : &T) -> String {
+    fn type_of<T>(_ : &T) -> String { // here & will not consume the string
         format!("{}", std::any::type_name::<T>())
     }
     println!("{}", pair.0);
